@@ -1,0 +1,515 @@
+{
+  "config": {
+    "configFile": "C:\\Git-repos\\tau-introduction-to-playwright\\playwright.config.ts",
+    "rootDir": "C:/Git-repos/tau-introduction-to-playwright",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests1",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "all-browsers-and-tests2",
+        "name": "all-browsers-and-tests",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "local",
+        "name": "local",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Git-repos/tau-introduction-to-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "ci",
+        "name": "ci",
+        "testDir": "C:/Git-repos/tau-introduction-to-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.39.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests-examples\\demo-todo-app.spec.ts",
+      "file": "tests-examples/demo-todo-app.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "New Todo",
+          "file": "tests-examples/demo-todo-app.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@smoke - should allow me to add todo items",
+              "ok": false,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 5983,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50",
+                        "location": {
+                          "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 50,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 50,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.582Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Git-repos\\tau-introduction-to-playwright\\test-results\\tests-examples-demo-todo-app-New-Todo-smoke---should-allow-me-to-add-todo-items-chromium\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 50,
+                        "line": 23
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "status": "failed",
+                      "duration": 5656,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50",
+                        "location": {
+                          "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 50,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 50,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2023-11-10T16:39:03.315Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Git-repos\\tau-introduction-to-playwright\\test-results\\tests-examples-demo-todo-app-New-Todo-smoke---should-allow-me-to-add-todo-items-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Git-repos\\tau-introduction-to-playwright\\test-results\\tests-examples-demo-todo-app-New-Todo-smoke---should-allow-me-to-add-todo-items-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 50,
+                        "line": 23
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "status": "failed",
+                      "duration": 5471,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50",
+                        "location": {
+                          "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                          "column": 50,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                            "column": 50,
+                            "line": 23
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByTestId('todo-title')\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"feed the cat\",\u001b[39m\n\u001b[31m+   \"buy some cheese\",\u001b[39m\n\u001b[2m  ]\u001b[22m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('todo-title')\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\u001b[2m  -   locator resolved to 1 element\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m     \u001b[90m// Make sure the list only has one todo item.\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'todo-title'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText([\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m       \u001b[33mTODO_ITEMS\u001b[39m[\u001b[35m1\u001b[39m]\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m     ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts:23:50\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2023-11-10T16:39:09.993Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Git-repos\\tau-introduction-to-playwright\\test-results\\tests-examples-demo-todo-app-New-Todo-smoke---should-allow-me-to-add-todo-items-chromium-retry2\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Git-repos\\tau-introduction-to-playwright\\tests-examples\\demo-todo-app.spec.ts",
+                        "column": 50,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-c77c539e63f39a53d912",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Item",
+          "file": "tests-examples/demo-todo-app.spec.ts",
+          "line": 122,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@smoke - should allow me to mark items as complete",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1245,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.422Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-58f765f38b91b8b243bf",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 124,
+              "column": 7
+            },
+            {
+              "title": "@smoke - should allow me to un-mark items as complete",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 1143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.656Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-2a6820016b49adf5a35d",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 149,
+              "column": 7
+            },
+            {
+              "title": "@smoke - should allow me to edit an item",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 1094,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.489Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-54d42bda15cb641d8ab6",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Editing",
+          "file": "tests-examples/demo-todo-app.spec.ts",
+          "line": 194,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@smoke - should hide other controls when editing",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 959,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.966Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-39473d34e2259ac5abdc",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 200,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Routing",
+          "file": "tests-examples/demo-todo-app.spec.ts",
+          "line": 333,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@smoke - should allow me to display completed items",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 1272,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-10T16:38:55.790Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0a034f6fd6168a682854-602ccb483b38acccb38b",
+              "file": "tests-examples/demo-todo-app.spec.ts",
+              "line": 378,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-11-10T16:38:54.585Z",
+    "duration": 21354.595
+  }
+}

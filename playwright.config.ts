@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test'; // Object
 import baseEnvUrl from './utils/environmentBaseUrl';
 
 /**
@@ -11,7 +11,7 @@ require('dotenv').config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  // testDir: './tests',
+//  testDir: './tests',
 
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -30,8 +30,8 @@ export default defineConfig({
   reporter: 'html',
   // reporter: [['html', { open: 'always' }]], //always, never and on-failure (default).
   // reporter: [['html', { outputFolder: 'my-report' }]], // report is written into the playwright-report folder in the current working directory. override it using the PLAYWRIGHT_HTML_REPORT
-  // reporter: 'dot',
-  // reporter: 'list',
+  //reporter: 'dot',
+   //reporter: 'json',
   /**
     reporter: [
       ['list'],
@@ -45,7 +45,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
+     baseURL: 'https://makeup.dev.cdscosa.com/makeup',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -53,9 +53,9 @@ export default defineConfig({
     // headless: false,
     // ignoreHTTPSErrors: true,
     // viewport: { width: 1280, height: 720 },
-    // video: 'on-first-retry',
+     //video: 'on-first-retry',
   },
-    // timeout: 30000, //https://playwright.dev/docs/test-timeouts
+     timeout: 40000, //https://playwright.dev/docs/test-timeouts
     // expect: {
       /**
        * Maximum time expect() should wait for the condition to be met.
@@ -134,20 +134,20 @@ export default defineConfig({
     },
 
     /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
+     {
+      name: 'Mobile_Chrome',
+      use: { ...devices['Pixel 5'] },
+     },
     // {
     //   name: 'Mobile Safari',
     //   use: { ...devices['iPhone 12'] },
     // },
 
     /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
+    {
+       name: 'Microsoft_Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    },
     // {
     //   name: 'Google Chrome',
     //   use: { ..devices['Desktop Chrome'], channel: 'chrome' },
